@@ -1,2 +1,12 @@
 
 @import "../../bower/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../bower/font-awesome/scss/font-awesome";
+
+html,
+body {
+  font-family: "Raleway", Arial, sans-serif;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
