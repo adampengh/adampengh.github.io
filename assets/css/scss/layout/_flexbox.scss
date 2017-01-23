@@ -9,10 +9,9 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+  align-items: stretch;
   max-width: $container-large-desktop;
   margin: 0 auto;
-
-  background: rgba(255, 0, 0, 0.1);
 
 
   @media screen and (min-width: $screen-xs) {
@@ -45,27 +44,26 @@
   }
 
 
-
   .column {
-    //width: 100%;
-    //margin: 10px;
-
-    text-align: center;
-    border: 1px solid #000;
+    width: 100%;
+    padding: 10px;
+    align-items: stretch;
   }
 }
 
 
-.layout {
-
-
-  // Layout mobile 2 --> tablet/desktop 4
-  &-2-4 {
-    .column {
-      width: 50%;
-      @media screen and (min-width: $screen-sm) {
-        width: 25%;
-      }
-    }
-  }
-}
+// .layout {
+//
+//
+//   // Layout mobile 2 --> tablet/desktop 4
+//   &-2-4 {
+//     .column {
+//       //margin: 10px;
+//       width: 100%;
+//       padding: 10px;
+//       &:last-child() {
+//         clear: both;
+//       }
+//     }
+//   }
+// }

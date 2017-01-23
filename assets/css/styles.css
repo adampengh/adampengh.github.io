@@ -7296,6 +7296,9 @@ h1 {
 h2, h3, h4, h5, h6 {
   font-weight: 300; }
 
+a:hover {
+  text-decoration: none; }
+
 .navbar {
   margin-bottom: 0; }
 
@@ -7319,9 +7322,11 @@ h2, h3, h4, h5, h6 {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   max-width: 1170px;
-  margin: 0 auto;
-  background: rgba(255, 0, 0, 0.1); }
+  margin: 0 auto; }
   @media screen and (min-width: 480px) {
     .flex-container.flex-xs-nowrap {
       -ms-flex-wrap: nowrap;
@@ -7339,14 +7344,11 @@ h2, h3, h4, h5, h6 {
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap; } }
   .flex-container .column {
-    text-align: center;
-    border: 1px solid #000; }
-
-.layout-2-4 .column {
-  width: 50%; }
-  @media screen and (min-width: 768px) {
-    .layout-2-4 .column {
-      width: 25%; } }
+    width: 100%;
+    padding: 10px;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
 
 footer {
   width: 100%;
@@ -7355,3 +7357,20 @@ footer {
   margin-top: 50px;
   padding-top: 20px;
   padding-bottom: 20px; }
+
+.breadcrumb {
+  background: white;
+  font-size: 14px; }
+  @media screen and (min-width: 768px) {
+    .breadcrumb {
+      font-size: 12px; } }
+
+.card {
+  padding: 10px 10px 20px 10px;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+  height: 100%; }
+  .card__content {
+    padding-left: 10px;
+    padding-right: 10px; }
