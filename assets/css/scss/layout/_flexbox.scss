@@ -6,4 +6,66 @@
 
 .flex-container {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: $container-large-desktop;
+  margin: 0 auto;
+
+  background: rgba(255, 0, 0, 0.1);
+
+
+  @media screen and (min-width: $screen-xs) {
+    &.flex-xs {
+      &-nowrap {
+        flex-wrap: nowrap;
+      }
+    }
+  }
+  @media screen and (min-width: $screen-sm) {
+    &.flex-sm {
+      &-nowrap {
+        flex-wrap: nowrap;
+      }
+    }
+  }
+  @media screen and (min-width: $screen-md) {
+    &.flex-md {
+      &-nowrap {
+        flex-wrap: nowrap;
+      }
+    }
+  }
+  @media screen and (min-width: $screen-lg) {
+    &.flex-lg {
+      &-nowrap {
+        flex-wrap: nowrap;
+      }
+    }
+  }
+
+
+
+  .column {
+    //width: 100%;
+    //margin: 10px;
+
+    text-align: center;
+    border: 1px solid #000;
+  }
+}
+
+
+.layout {
+
+
+  // Layout mobile 2 --> tablet/desktop 4
+  &-2-4 {
+    .column {
+      width: 50%;
+      @media screen and (min-width: $screen-sm) {
+        width: 25%;
+      }
+    }
+  }
 }

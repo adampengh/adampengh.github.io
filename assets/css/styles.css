@@ -7310,7 +7310,43 @@ h2, h3, h4, h5, h6 {
 .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 1170px;
+  margin: 0 auto;
+  background: rgba(255, 0, 0, 0.1); }
+  @media screen and (min-width: 480px) {
+    .flex-container.flex-xs-nowrap {
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; } }
+  @media screen and (min-width: 768px) {
+    .flex-container.flex-sm-nowrap {
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; } }
+  @media screen and (min-width: 992px) {
+    .flex-container.flex-md-nowrap {
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; } }
+  @media screen and (min-width: 1200px) {
+    .flex-container.flex-lg-nowrap {
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; } }
+  .flex-container .column {
+    text-align: center;
+    border: 1px solid #000; }
+
+.layout-2-4 .column {
+  width: 50%; }
+  @media screen and (min-width: 768px) {
+    .layout-2-4 .column {
+      width: 25%; } }
 
 footer {
   width: 100%;
