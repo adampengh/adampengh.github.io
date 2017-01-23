@@ -7,6 +7,28 @@ body {
   font-family: "Raleway", Arial, sans-serif;
 }
 
+h1 {
+  font-weight: 200;
+}
+
+h2,h3,h4,h5,h6 {
+  font-weight: 300;
+}
+
 .navbar {
   margin-bottom: 0;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+
+footer {
+  width: 100%;
+  background: #333;
+  color: #fff;
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
