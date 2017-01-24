@@ -7357,6 +7357,11 @@ footer {
   margin-top: 50px;
   padding-top: 20px;
   padding-bottom: 20px; }
+  footer svg {
+    max-width: 30px;
+    margin: 0 5px; }
+    footer svg path {
+      fill: #fff; }
 
 .breadcrumb {
   background: white;
