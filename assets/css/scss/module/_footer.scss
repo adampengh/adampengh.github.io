@@ -7,11 +7,19 @@ footer {
   padding-top: 20px;
   padding-bottom: 20px;
 
+  a:hover {
+    text-decoration: none;
+  }
+
   & svg {
     max-width: 30px;
     margin: 0 5px;
-    & path {
-      fill: #fff;
+    fill: #e8e8e8;
+    transition: all 0.3s ease-in-out;
+    &:hover,
+    &:focus,
+    &:active {
+      fill: #ccc;
     }
   }
 }
