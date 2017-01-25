@@ -7,9 +7,14 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Adam Pengh Portfolio</title>
 
+    <!-- Prefetch -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com/">
+
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800" rel="stylesheet">
     <link href="/assets/css/styles.css" rel="stylesheet">
+
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -285,6 +290,20 @@
       </div>
     </footer>
 
-    <script src="/assets/js/script.min.js"></script>
+
+    <!-- Main JavaScript - Defer until after onLoad event -->
+    <script type="text/javascript">
+    function downloadJSAtOnload(file) {
+      var element = document.createElement("script");
+      element.src = "/assets/js/script.min.js";
+      document.body.appendChild(element);
+    }
+    if (window.addEventListener)
+      window.addEventListener("load", downloadJSAtOnload, false);
+    else if (window.attachEvent)
+      window.attachEvent("onload", downloadJSAtOnload);
+    else window.onload = downloadJSAtOnload;
+    </script>
+
   </body>
 </html>
