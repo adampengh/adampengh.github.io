@@ -1,0 +1,19 @@
+{
+  "paths": {
+    "root": "./",
+    "src": {
+      "scss": "./source/assets/scss"
+    },
+    "dest": {
+      "css": "./public/assets/css"
+    }
+  },
+  "modules": {
+    "sass": {
+      "outputStyle": "nested"
+    },
+    "autoprefixer": {
+      "browsers": "last 2 versions"
+    }
+  }
+}
