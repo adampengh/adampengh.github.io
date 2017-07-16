@@ -2,10 +2,10 @@
   "paths": {
     "root": "./",
     "src": {
-      "scss": "./source/assets/scss"
+      "scss": "./assets/scss"
     },
     "dest": {
-      "css": "./public/assets/css"
+      "css": "./assets/css"
     }
   },
   "modules": {
